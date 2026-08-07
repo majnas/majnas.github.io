@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Majid Nasiri — AI Engineer</title>
+<title>majid@dev:~$ — AI Engineer</title>
 <meta name="description" content="Majid Nasiri — AI Engineer in Melbourne, Australia. LLMs, computer vision, and MLOps." />
 <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,10 +11,12 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="#top">majnas</a>
+    <a class="brand" href="#top">majid<span class="cursor">_</span></a>
     <nav>
-      <a href="#projects">Projects</a>
+      <a href="#top">Home</a>
       <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -22,76 +24,148 @@
 
 <main id="top">
   <section class="hero wrap">
-    <p class="eyebrow">📍 Melbourne, Australia</p>
-    <h1>Hi, I'm Majid.</h1>
-    <p class="lede">AI Engineer building practical, scalable AI systems — with a focus on
+    <div class="term">
+      <div class="term-bar">
+        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+        <span class="term-title">majid@dev — zsh</span>
+      </div>
+      <div class="term-body">
+        <p><span class="prompt">majid@dev</span> <span class="path">~</span> <span class="sym">$</span> whoami</p>
+        <p class="out">Majid Nasiri — AI Engineer</p>
+        <p><span class="prompt">majid@dev</span> <span class="path">~</span> <span class="sym">$</span> status</p>
+        <p class="out"><span class="badge">● available</span> Melbourne, Australia · AEST</p>
+        <p><span class="prompt">majid@dev</span> <span class="path">~</span> <span class="sym">$</span> deploy --env production --focus llm,cv,mlops<span class="cursor">_</span></p>
+      </div>
+    </div>
+
+    <p class="lede">Building practical, scalable AI systems — with a focus on
       <strong>LLMs</strong>, <strong>computer vision</strong>, and <strong>MLOps</strong>.</p>
+
     <div class="cta-row">
-      <a class="btn btn-primary" href="#projects">View projects</a>
-      <a class="btn" href="https://github.com/majnas" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-primary" href="#work">./view-work</a>
+      <a class="btn" href="https://github.com/majnas" target="_blank" rel="noopener">github --open</a>
     </div>
   </section>
 
-  <section id="projects" class="projects wrap">
-    <h2>Featured Projects</h2>
-
-    <div class="project-grid">
-
-      <article class="card">
-        <a class="card-media" href="https://majnas.github.io/finetune-gemma4-to-generate-ascii-maze/" target="_blank" rel="noopener">
-          <img src="assets/maze-preview.gif" alt="Model-generated ASCII maze rendered in an interactive 3D gallery" loading="lazy" />
-        </a>
-        <div class="card-body">
-          <h3>Gemma-4 ASCII-Maze Finetune</h3>
-          <p class="tags">Unsloth · LoRA · GGUF · Three.js</p>
-          <p>Fine-tuned <code>unsloth/gemma-4-E2B-it</code> on a local ASCII-maze dataset with LoRA,
-            then exported and converted to GGUF for local inference. Includes an interactive 3D
-            gallery for browsing model-generated mazes across four fine-tuning phases.</p>
-          <div class="card-links">
-            <a href="https://majnas.github.io/finetune-gemma4-to-generate-ascii-maze/" target="_blank" rel="noopener">Live demo →</a>
-            <a href="https://github.com/majnas/finetune-gemma4-to-generate-ascii-maze" target="_blank" rel="noopener">Code →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <a class="card-media" href="https://github.com/zozaai/jetvoice" target="_blank" rel="noopener">
-          <img src="assets/jetvoice-logo.jpg" alt="jetvoice logo" loading="lazy" />
-        </a>
-        <div class="card-body">
-          <h3>jetvoice</h3>
-          <p class="tags">Jetson Nano · Speech-to-Text · OpenAI API · Docker</p>
-          <p>A lightweight voice-assistant pipeline for NVIDIA Jetson Nano: speech-to-text,
-            LLM calling via the OpenAI API, and a dockerized deployment workflow, with voice
-            activity detection and text-to-speech on the roadmap.</p>
-          <div class="card-links">
-            <a href="https://github.com/zozaai/jetvoice" target="_blank" rel="noopener">Code →</a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <section id="about" class="about wrap">
-    <h2>About</h2>
-    <p>Deep in build mode — shipping practical AI systems with a strong focus on LLMs, computer
-      vision, and MLOps. I care about clean abstractions, reproducible pipelines, and tools
+  <section id="about" class="wrap section">
+    <h2><span class="idx">01</span> — whoami</h2>
+    <p class="section-lede">Deep in build mode — shipping practical AI systems with a strong focus on LLMs,
+      computer vision, and MLOps. I care about clean abstractions, reproducible pipelines, and tools
       developers actually enjoy using.</p>
+
+    <div class="values-grid">
+      <div class="value">
+        <p class="value-key">release_calm</p>
+        <p class="value-desc">Ship changes that don't wake anyone up at 3am.</p>
+      </div>
+      <div class="value">
+        <p class="value-key">automate_toil</p>
+        <p class="value-desc">If it's manual and repeated twice, it becomes a pipeline.</p>
+      </div>
+      <div class="value">
+        <p class="value-key">reproducible_by_default</p>
+        <p class="value-desc">Configs and seeds over tribal knowledge.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="wrap section">
+    <h2><span class="idx">02</span> — ls -la projects/</h2>
+
+    <div class="project-list">
+
+      <article class="project">
+        <div class="project-row">
+          <span class="perm">drwxr-xr-x</span>
+          <a class="project-name" href="https://majnas.github.io/finetune-gemma4-to-generate-ascii-maze/" target="_blank" rel="noopener">finetune-gemma4-to-generate-ascii-maze/</a>
+        </div>
+        <div class="project-body">
+          <a class="project-media" href="https://majnas.github.io/finetune-gemma4-to-generate-ascii-maze/" target="_blank" rel="noopener">
+            <img src="assets/maze-preview.gif" alt="Model-generated ASCII maze rendered in an interactive 3D gallery" loading="lazy" />
+          </a>
+          <div class="project-info">
+            <p class="tags">unsloth · lora · gguf · three.js</p>
+            <p>Fine-tuned <code>unsloth/gemma-4-E2B-it</code> on a local ASCII-maze dataset with LoRA,
+              then exported and converted to GGUF for local inference. Ships with an interactive 3D
+              gallery for browsing model-generated mazes across four fine-tuning phases.</p>
+            <div class="project-links">
+              <a href="https://majnas.github.io/finetune-gemma4-to-generate-ascii-maze/" target="_blank" rel="noopener">./live-demo</a>
+              <a href="https://github.com/majnas/finetune-gemma4-to-generate-ascii-maze" target="_blank" rel="noopener">./source</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-row">
+          <span class="perm">drwxr-xr-x</span>
+          <a class="project-name" href="https://github.com/zozaai/jetvoice" target="_blank" rel="noopener">jetvoice/</a>
+        </div>
+        <div class="project-body">
+          <a class="project-media" href="https://github.com/zozaai/jetvoice" target="_blank" rel="noopener">
+            <img src="assets/jetvoice-logo.jpg" alt="jetvoice logo" loading="lazy" />
+          </a>
+          <div class="project-info">
+            <p class="tags">jetson nano · speech-to-text · openai api · docker</p>
+            <p>A lightweight voice-assistant pipeline for NVIDIA Jetson Nano: speech-to-text,
+              LLM calling via the OpenAI API, and a dockerized deployment workflow, with voice
+              activity detection and text-to-speech on the roadmap.</p>
+            <div class="project-links">
+              <a href="https://github.com/zozaai/jetvoice" target="_blank" rel="noopener">./source</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="stack" class="wrap section">
+    <h2><span class="idx">03</span> — cat stack.yaml</h2>
+    <pre class="yaml-block"><code><span class="yk">languages</span>:
+  - python
+  - bash
+<span class="yk">ml</span>:
+  - pytorch
+  - huggingface
+  - unsloth / lora
+  - vllm
+  - ollama
+<span class="yk">frameworks</span>:
+  - langchain
+  - opencv
+<span class="yk">infra</span>:
+  - docker
+  - linux
+  - git</code></pre>
   </section>
 </main>
 
 <footer id="contact" class="site-footer wrap">
-  <p>Let's connect.</p>
+  <h2><span class="idx">04</span> — ping majid</h2>
+  <p class="section-lede">Let's connect.</p>
   <div class="cta-row">
-    <a class="btn" href="https://github.com/majnas" target="_blank" rel="noopener">GitHub</a>
-    <a class="btn" href="mailto:majnasai@gmail.com">Email</a>
+    <a class="btn" href="https://github.com/majnas" target="_blank" rel="noopener">github --open</a>
+    <button class="btn" id="copy-email" data-email="majnasai@gmail.com">email --copy</button>
   </div>
-  <p class="fine-print">© <span id="year"></span> Majid Nasiri</p>
+  <p class="fine-print">© <span id="year"></span> Majid Nasiri — built with vim, not a template.</p>
 </footer>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  const copyBtn = document.getElementById('copy-email');
+  copyBtn.addEventListener('click', async () => {
+    const email = copyBtn.dataset.email;
+    try {
+      await navigator.clipboard.writeText(email);
+      const original = copyBtn.textContent;
+      copyBtn.textContent = 'copied: ' + email;
+      setTimeout(() => { copyBtn.textContent = original; }, 2000);
+    } catch {
+      window.location.href = 'mailto:' + email;
+    }
+  });
 </script>
 
 </body>
