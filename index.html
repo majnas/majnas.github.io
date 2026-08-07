@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Majid Nasiri — AI Engineer</title>
+<meta name="description" content="Majid Nasiri — AI Engineer in Melbourne, Australia. LLMs, computer vision, and MLOps." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">majnas</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <p class="eyebrow">📍 Melbourne, Australia</p>
+    <h1>Hi, I'm Majid.</h1>
+    <p class="lede">AI Engineer building practical, scalable AI systems — with a focus on
+      <strong>LLMs</strong>, <strong>computer vision</strong>, and <strong>MLOps</strong>.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#projects">View projects</a>
+      <a class="btn" href="https://github.com/majnas" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects wrap">
+    <h2>Featured Projects</h2>
+
+    <div class="project-grid">
+
+      <article class="card">
+        <a class="card-media" href="https://majnas.github.io/finetune-gemma4-to-generate-ascii-maze/" target="_blank" rel="noopener">
+          <img src="assets/maze-preview.gif" alt="Model-generated ASCII maze rendered in an interactive 3D gallery" loading="lazy" />
+        </a>
+        <div class="card-body">
+          <h3>Gemma-4 ASCII-Maze Finetune</h3>
+          <p class="tags">Unsloth · LoRA · GGUF · Three.js</p>
+          <p>Fine-tuned <code>unsloth/gemma-4-E2B-it</code> on a local ASCII-maze dataset with LoRA,
+            then exported and converted to GGUF for local inference. Includes an interactive 3D
+            gallery for browsing model-generated mazes across four fine-tuning phases.</p>
+          <div class="card-links">
+            <a href="https://majnas.github.io/finetune-gemma4-to-generate-ascii-maze/" target="_blank" rel="noopener">Live demo →</a>
+            <a href="https://github.com/majnas/finetune-gemma4-to-generate-ascii-maze" target="_blank" rel="noopener">Code →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="card-media" href="https://github.com/zozaai/jetvoice" target="_blank" rel="noopener">
+          <img src="assets/jetvoice-logo.jpg" alt="jetvoice logo" loading="lazy" />
+        </a>
+        <div class="card-body">
+          <h3>jetvoice</h3>
+          <p class="tags">Jetson Nano · Speech-to-Text · OpenAI API · Docker</p>
+          <p>A lightweight voice-assistant pipeline for NVIDIA Jetson Nano: speech-to-text,
+            LLM calling via the OpenAI API, and a dockerized deployment workflow, with voice
+            activity detection and text-to-speech on the roadmap.</p>
+          <div class="card-links">
+            <a href="https://github.com/zozaai/jetvoice" target="_blank" rel="noopener">Code →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="about" class="about wrap">
+    <h2>About</h2>
+    <p>Deep in build mode — shipping practical AI systems with a strong focus on LLMs, computer
+      vision, and MLOps. I care about clean abstractions, reproducible pipelines, and tools
+      developers actually enjoy using.</p>
+  </section>
+</main>
+
+<footer id="contact" class="site-footer wrap">
+  <p>Let's connect.</p>
+  <div class="cta-row">
+    <a class="btn" href="https://github.com/majnas" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="mailto:majnasai@gmail.com">Email</a>
+  </div>
+  <p class="fine-print">© <span id="year"></span> Majid Nasiri</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
