@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>majid@dev:~$ — AI Engineer</title>
-<meta name="description" content="Majid Nasiri — AI Engineer in Melbourne, Australia. LLMs, computer vision, and MLOps." />
+<title>majid@dev:~$ — Senior Applied AI / ML Engineer</title>
+<meta name="description" content="Majid Nasiri — Senior Applied AI / ML Engineer in Melbourne, Australia. 10+ years building production LLM, RAG, agentic AI, and computer vision systems." />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,7 +15,8 @@
     <nav>
       <a href="#top">Home</a>
       <a href="#about">About</a>
-      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Projects</a>
       <a href="#stack">Stack</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -31,15 +32,16 @@
       </div>
       <div class="term-body">
         <p><span class="prompt">majid@dev</span> <span class="path">~</span> <span class="sym">$</span> whoami</p>
-        <p class="out">Majid Nasiri — Senior Applied AI/ML Engineer</p>
+        <p class="out">Majid Nasiri — Senior Applied AI / ML Engineer</p>
         <p><span class="prompt">majid@dev</span> <span class="path">~</span> <span class="sym">$</span> status</p>
         <p class="out"><span class="badge">● available</span> Melbourne, Australia · AEST</p>
-        <p><span class="prompt">majid@dev</span> <span class="path">~</span> <span class="sym">$</span> deploy --env production --focus llm,cv,mlops<span class="cursor">_</span></p>
+        <p><span class="prompt">majid@dev</span> <span class="path">~</span> <span class="sym">$</span> deploy --env production --focus llm,rag,agentic,cv,mlops<span class="cursor">_</span></p>
       </div>
     </div>
 
-    <p class="lede">Building practical, scalable AI systems — with a focus on
-      <strong>LLMs</strong>, <strong>computer vision</strong>, and <strong>MLOps</strong>.</p>
+    <p class="lede">10+ years building production AI systems — <strong>LLM applications</strong>,
+      <strong>RAG pipelines</strong>, <strong>agentic AI workflows</strong>, and
+      <strong>computer vision</strong>, shipped with FastAPI, Docker, and CI/CD.</p>
 
     <div class="cta-row">
       <a class="btn btn-primary" href="#work">./view-work</a>
@@ -50,28 +52,77 @@
 
   <section id="about" class="wrap section">
     <h2><span class="idx">01</span> — whoami</h2>
-    <p class="section-lede">Deep in build mode — shipping practical AI systems with a strong focus on LLMs,
-      computer vision, and MLOps. I care about clean abstractions, reproducible pipelines, and tools
-      developers actually enjoy using.</p>
+    <p class="section-lede">Senior Applied AI / ML Engineer with a decade of experience building production AI
+      systems across LLM applications, RAG pipelines, agentic AI workflows, and computer vision. Hands-on with
+      OpenAI-compatible APIs, Claude, MCP, LangChain, FAISS/vector retrieval, AI evaluation and observability,
+      FastAPI, Docker, and CI/CD — with a strong focus on practical, scalable, production-ready AI.</p>
 
     <div class="values-grid">
       <div class="value">
-        <p class="value-key">release_calm</p>
-        <p class="value-desc">Ship changes that don't wake anyone up at 3am.</p>
+        <p class="value-key">production_ready</p>
+        <p class="value-desc">Ship LLM and CV systems that hold up under real traffic, not just demos.</p>
       </div>
       <div class="value">
-        <p class="value-key">automate_toil</p>
-        <p class="value-desc">If it's manual and repeated twice, it becomes a pipeline.</p>
+        <p class="value-key">ground_the_model</p>
+        <p class="value-desc">RAG and tool-use grounded in real data — FAISS retrieval, schema-aware prompting.</p>
       </div>
       <div class="value">
-        <p class="value-key">reproducible_by_default</p>
-        <p class="value-desc">Configs and seeds over tribal knowledge.</p>
+        <p class="value-key">automate_the_pipeline</p>
+        <p class="value-desc">Reproducible training/export pipelines, Dockerized, wired into CI/CD by default.</p>
       </div>
     </div>
   </section>
 
+  <section id="experience" class="wrap section">
+    <h2><span class="idx">02</span> — git log --career</h2>
+
+    <div class="commit-list">
+
+      <div class="commit">
+        <div class="commit-meta"><span class="commit-date">Jan 2025 – Present</span></div>
+        <p class="commit-title">Senior AI / ML Developer <span class="at">@</span> Asset Vision, Melbourne</p>
+        <p class="commit-body">AVGPT text-to-SQL over asset databases (LangChain, FAISS RAG, Qwen3-30B-A3B on
+          Ollama) · Autopilot multi-model CV inspection microservice (YOLO defect/segmentation/asset detection +
+          monocular depth) · Rewind image matching (ORB, SuperPoint, LightGlue) · Geometry vanishing-point/top-view
+          API · Linear Asset Extraction (SegFormer, SLAM, Kalman/DeepSort) · Pavement Defect Detection
+          (EfficientDet, YOLOv5-9). All shipped via Docker/FastAPI with GitLab CI &amp; GitHub Actions.</p>
+      </div>
+
+      <div class="commit">
+        <div class="commit-meta"><span class="commit-date">Jan 2022 – Present</span></div>
+        <p class="commit-title">Generative AI Engineer <span class="at">@</span> Freelance, Melbourne</p>
+        <p class="commit-body">Gemma-4 ASCII-maze generation &amp; solving finetune · JetVoice Jetson Nano voice
+          assistant · MazeLLM tool-using agent vs. D* Lite benchmark · MCP client routing OpenAI function calls to
+          local MCP servers over stdio. See <a href="#work">Projects</a> below.</p>
+      </div>
+
+      <div class="commit">
+        <div class="commit-meta"><span class="commit-date">Apr 2020 – Jan 2022</span></div>
+        <p class="commit-title">Computer Vision Engineer <span class="at">@</span> Tosan Techno, Tehran</p>
+        <p class="commit-body">Face recognition attendance system (MXNet, OpenCV, Dockerized FastAPI) · Face
+          spoofing / anti-biometric-attack detection (TensorFlow, PyTorch, OpenCV).</p>
+      </div>
+
+      <div class="commit">
+        <div class="commit-meta"><span class="commit-date">Sep 2018 – Mar 2020</span></div>
+        <p class="commit-title">Computer Vision Developer <span class="at">@</span> Digibina, Tehran</p>
+        <p class="commit-body">AR virtual try-on platform for glasses/sunglasses — facial landmark detection, glasses
+          estimation, and 3D fitting (OpenCV, DNNs, Python/C++), deployed as FastAPI microservices on Docker.</p>
+      </div>
+
+      <div class="commit">
+        <div class="commit-meta"><span class="commit-date">Sep 2016 – Present</span></div>
+        <p class="commit-title">ML / CV Developer <span class="at">@</span> Freelance / Contract, Tehran</p>
+        <p class="commit-body">SegFormer-based road-line segmentation &amp; classification (PyTorch, C++) ·
+          Capsule-network 3D point-cloud classification (PointNet, PointConv, DGCNN) and zero-shot 3D
+          classification with BERT + contrastive learning.</p>
+      </div>
+
+    </div>
+  </section>
+
   <section id="work" class="wrap section">
-    <h2><span class="idx">02</span> — ls -la projects/</h2>
+    <h2><span class="idx">03</span> — ls -la projects/</h2>
 
     <div class="project-list">
 
@@ -86,9 +137,10 @@
           </a>
           <div class="project-info">
             <p class="tags">unsloth · lora · gguf · three.js</p>
-            <p>Fine-tuned <code>unsloth/gemma-4-E2B-it</code> on a local ASCII-maze dataset with LoRA,
-              then exported and converted to GGUF for local inference. Ships with an interactive 3D
-              gallery for browsing model-generated mazes across four fine-tuning phases.</p>
+            <p>Fine-tuned <code>Gemma-4-E2B-it</code> with Unsloth + LoRA on deterministic synthetic datasets for
+              generating and solving fixed- and variable-size ASCII mazes with randomized start/end positions.
+              Full pipeline: dataset generation, training, structural validation, merged/GGUF export, llama.cpp
+              deployment, and an interactive 3D gallery for browsing results.</p>
             <div class="project-links">
               <a href="https://majnas.github.io/finetune-gemma4-to-generate-ascii-maze/" target="_blank" rel="noopener">./live-demo</a>
               <a href="https://github.com/majnas/finetune-gemma4-to-generate-ascii-maze" target="_blank" rel="noopener">./source</a>
@@ -107,12 +159,50 @@
             <img src="assets/jetvoice-logo.jpg" alt="jetvoice logo" loading="lazy" />
           </a>
           <div class="project-info">
-            <p class="tags">jetson nano · speech-to-text · openai api · docker</p>
-            <p>A lightweight voice-assistant pipeline for NVIDIA Jetson Nano: speech-to-text,
-              LLM calling via the OpenAI API, and a dockerized deployment workflow, with voice
-              activity detection and text-to-speech on the roadmap.</p>
+            <p class="tags">jetson nano · webrtc vad · vosk stt · openai api · docker</p>
+            <p>A Jetson Nano voice-assistant pipeline combining WebRTC VAD, Vosk speech-to-text, OpenAI LLM calls,
+              and offline/online text-to-speech to turn live microphone input into conversational responses.
+              End-to-end audio loop, env-based config, Dockerized deployment, and component tests for VAD/STT/LLM/TTS.</p>
             <div class="project-links">
               <a href="https://github.com/zozaai/jetvoice" target="_blank" rel="noopener">./source</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-row">
+          <span class="perm">drwxr-xr-x</span>
+          <a class="project-name" href="https://github.com/zozaai/MazeLLM" target="_blank" rel="noopener">MazeLLM/</a>
+        </div>
+        <div class="project-body">
+          <a class="project-media" href="https://github.com/zozaai/MazeLLM" target="_blank" rel="noopener">
+            <img src="assets/mazellm-diagram.svg" alt="MazeLLM architecture diagram" loading="lazy" />
+          </a>
+          <div class="project-info">
+            <p class="tags">llm tool-use agent · d* lite · fastapi · websocket</p>
+            <p>An end-to-end maze-solving platform pitting a tool-using LLM agent against a D* Lite baseline under
+              identical fog-of-war constraints for a fair comparison. FastAPI backend, WebSocket streaming solve
+              loop, browser-based live visualization, and provider-agnostic OpenAI-compatible LLM support.</p>
+            <div class="project-links">
+              <a href="https://github.com/zozaai/MazeLLM" target="_blank" rel="noopener">./source</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-row">
+          <span class="perm">drwxr-xr-x</span>
+          <a class="project-name" href="https://github.com/majnas/SimpleModelContextProtocol" target="_blank" rel="noopener">SimpleModelContextProtocol/</a>
+        </div>
+        <div class="project-body no-media">
+          <div class="project-info">
+            <p class="tags">mcp · openai function-calling · stdio</p>
+            <p>An LLM-powered MCP client that discovers tools from local MCP servers and routes OpenAI function
+              calls to the right backend over stdio.</p>
+            <div class="project-links">
+              <a href="https://github.com/majnas/SimpleModelContextProtocol" target="_blank" rel="noopener">./source</a>
             </div>
           </div>
         </div>
@@ -122,32 +212,59 @@
   </section>
 
   <section id="stack" class="wrap section">
-    <h2><span class="idx">03</span> — cat stack.yaml</h2>
+    <h2><span class="idx">04</span> — cat stack.yaml</h2>
     <pre class="yaml-block"><code><span class="yk">languages</span>:
   - python
+  - c++
   - bash
-<span class="yk">ml</span>:
-  - pytorch
-  - huggingface
-  - unsloth / lora
-  - vllm
-  - ollama
-<span class="yk">frameworks</span>:
+<span class="yk">llm_and_agents</span>:
+  - openai-api / claude / mcp
   - langchain
-  - opencv
+  - agentic workflows
+  - rag (faiss, vector retrieval)
+  - prompt engineering
+  - qwen3-30b-a3b (ollama / vllm)
+<span class="yk">computer_vision</span>:
+  - yolo (v5-v9, v26x) / fastsam
+  - segformer / efficientdet
+  - pytorch / tensorflow / libtorch / torchscript
+  - mxnet
+<span class="yk">classical_cv_and_tracking</span>:
+  - orb / sift / surf / superpoint / lightglue
+  - slam / kalman filter / deepsort
 <span class="yk">infra</span>:
-  - docker
-  - linux
-  - git</code></pre>
+  - docker / docker-compose
+  - fastapi
+  - ci/cd (gitlab ci, github actions)
+  - ai evaluation and observability</code></pre>
+  </section>
+
+  <section id="credentials" class="wrap section">
+    <h2><span class="idx">05</span> — ls -la credentials/</h2>
+    <div class="project-list">
+      <article class="project">
+        <div class="project-row">
+          <span class="perm">-rw-r--r--</span>
+          <span class="project-name">m.s.-artificial-intelligence-and-robotics.pdf</span>
+        </div>
+        <div class="project-body no-media">
+          <div class="project-info">
+            <p class="tags">shahid rajaee teacher training university · tehran · 2016 – 2018 · gpa 19.36/20 (a+)</p>
+            <p>Thesis: Semantic Image Segmentation in outdoor scenes using Deep Neural Networks.</p>
+          </div>
+        </div>
+      </article>
+    </div>
   </section>
 </main>
 
 <footer id="contact" class="site-footer wrap">
-  <h2><span class="idx">04</span> — ping majid</h2>
+  <h2><span class="idx">06</span> — ping majid</h2>
   <p class="section-lede">Let's connect.</p>
   <div class="cta-row">
     <a class="btn" href="https://rxresu.me/majnas/cv" target="_blank" rel="noopener">resume --view</a>
     <a class="btn" href="https://github.com/majnas" target="_blank" rel="noopener">github --open</a>
+    <a class="btn" href="https://www.linkedin.com/in/majnasai/" target="_blank" rel="noopener">linkedin --open</a>
     <button class="btn" id="copy-email" data-email="majnasai@gmail.com">email --copy</button>
   </div>
   <p class="fine-print">© <span id="year"></span> Majid Nasiri — built with vim, not a template.</p>

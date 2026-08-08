@@ -251,9 +251,57 @@ code { font-family: var(--mono); }
   margin-top: 12px !important;
 }
 
+.project-body.no-media {
+  grid-template-columns: 1fr;
+}
+.project-name:not(a) {
+  color: var(--text);
+  font-weight: 600;
+}
+
 @media (max-width: 560px) {
   .project-body { grid-template-columns: 1fr; }
 }
+
+/* Experience / commit log */
+.commit-list {
+  position: relative;
+  padding-left: 20px;
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.commit { position: relative; }
+.commit::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.commit-date {
+  color: var(--accent-2);
+  font-size: 0.8rem;
+}
+.commit-title {
+  margin: 6px 0 6px;
+  font-weight: 600;
+  color: var(--text);
+}
+.commit-title .at { color: var(--text-muted); font-weight: 400; }
+.commit-body {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  max-width: 640px;
+}
+.commit-body a { color: var(--accent-2); }
 
 /* Stack yaml block */
 .yaml-block {
